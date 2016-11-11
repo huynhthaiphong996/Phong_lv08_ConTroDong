@@ -56,4 +56,10 @@ calloc(10, sizeof(struct sv));
  **Phân tích Chức năng:** Hàm cấp phát lại bộ nhớ  
 * **Trong đó:**  
  * buf_p là con trỏ đang trỏ đến vùng ô nhớ đã được cấp phát từ trước.  
- * newsize là kích thước mới cần cấp phát, có thể to hoặc nhỏ hơn. 
+ * newsize là kích thước mới cần cấp phát, có thể to hoặc nhỏ hơn.  
+
+## d/Giải phóng bộ nhớ bằng hàm free
+* **Cú pháp**  
+`void free( void *prt)`
+	* Hàm free giải phóng vùng nhớ được trỏ đến bởi con trỏ ptr. 
+	* Nếu con trỏ ptr = NULL thì hàm free không làm gì cả.
